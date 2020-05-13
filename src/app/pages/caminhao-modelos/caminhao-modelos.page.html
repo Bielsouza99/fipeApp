@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button> 
+    </ion-buttons>
+    <ion-title>Modelos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let modelo of modelos.modelos">
+    <ion-item button (click)="anos(modelo.codigo)">
+      {{modelo.nome}}
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Valor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card type="ios hydrated">
+    <ion-card-header>
+      <ion-card-title>{{valor.Modelo}}</ion-card-title>
+      <ion-card-subtitle>Marca: {{valor.Marca}} <br> Ano: {{valor.AnoModelo}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>
+          Valor: 
+        </ion-label>
+        {{valor.Valor}} 
+      </ion-item>
+      <ion-item>Combustível: {{valor.Combustivel}}</ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-item>
+    <ion-label>
+      Referência:
+    </ion-label>
+    {{valor.MesReferencia}}
+  </ion-item>
+</ion-footer>

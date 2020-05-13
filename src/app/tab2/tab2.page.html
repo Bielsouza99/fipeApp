@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar mode="ios">
+    <ion-title>
+      Marcas 
+    </ion-title>
+    <!-- <ion-searchbar showCancelButton="always"></ion-searchbar> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list class="ios">
+    <ion-item no-lines *ngFor="let marca of marcas" button (click)="listarModelos(marca.codigo)">
+      {{marca.nome}}
+    </ion-item>
+  </ion-list>
+</ion-content>
