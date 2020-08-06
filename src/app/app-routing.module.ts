@@ -7,18 +7,6 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'modelos/:marca',
-    loadChildren: () => import('./modelos/modelos.module').then( m => m.ModelosPageModule)
-  },
-  {
-    path: 'anos/:marca/:modelo',
-    loadChildren: () => import('./anos/anos.module').then( m => m.AnosPageModule)
-  },
-  {
-    path: 'valor/:marca/:modelo/:ano',
-    loadChildren: () => import('./valor/valor.module').then( m => m.ValorPageModule)
-  },
-  {
     path: 'motos-modelos/:marca',
     loadChildren: () => import('./pages/motos-modelos/motos-modelos.module').then( m => m.MotosModelosPageModule)
   },
