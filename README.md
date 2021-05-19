@@ -1,17 +1,14 @@
 # fipeApp
-Aplicativo para consultar os preços de veículos de acordo com a tabela FIPE
+Application to consult vehicle prices according to the FIPE table
 
-Desenvolvido em cima do framework Ionic version 6.6.0 
+Developed with Ionic version 6.6.0 framework
 
-Caso já tenha o Ionic framework instalado siga os passos abaixo, caso contrário acesse https://ionicframework.com/getting-started.
+If you already have the Ionic framework installed, follow the steps below, otherwise visit https://ionicframework.com/getting-started.
 
-Clone o repositório
-Entre no diretório clonado "cd home/user/fipeApp"
-Instale o node_modules usando o comando "npm i" ou "npm install"
-Instale o module para visualizar o aplicativo na tela de um celular na web "npm i @ionic/lab" ou "npm install @ionic/lab"
-Inicie o serviço para visualização em modo web com "ionic serve" ou para visualizar no modo celular "ionic serve -l"
+Clone the repository
+Enter the cloned directory where you cloned the repository.
+Install node_modules using the "npm i" or "npm install" command
+Install the module to view the application on the screen of a mobile phone on the web "npm i @ ionic / lab" or "npm install @ ionic / lab"
+Start the service for viewing in web mode with "ionic serve" or for viewing in cellular mode "ionic serve -l" 
 
-```
-teste de código
 
-´´´
