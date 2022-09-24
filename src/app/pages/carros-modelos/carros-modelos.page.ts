@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carros-modelos.page.scss'],
 })
 export class CarrosModelosPage implements OnInit {
-  
+
   marca: any;
   modelos: any = [];
 
@@ -27,5 +27,4 @@ export class CarrosModelosPage implements OnInit {
   anos(modelo: any) {
     this.router.navigate(['/carros-anos/', this.marca, modelo]);
   }
-
 }

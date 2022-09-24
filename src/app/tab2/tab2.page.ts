@@ -8,13 +8,13 @@ import { Router } from '@angular/router';
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
-export class Tab2Page {
+export class Tab2Page implements OnInit {
 
   marcas;
 
   constructor(private fipeApi: FipeService, private router: Router) {}
 
-  ngOnInit () {
+  ngOnInit() {
     this.fipeApi.MarcasMoto().subscribe((data) => {
       this.marcas = data;
     });

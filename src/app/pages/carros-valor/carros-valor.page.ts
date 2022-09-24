@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./carros-valor.page.scss'],
 })
 export class CarrosValorPage implements OnInit {
-  
+
   ano;
   marca;
   modelo;

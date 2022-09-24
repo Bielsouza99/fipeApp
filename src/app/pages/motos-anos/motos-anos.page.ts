@@ -20,7 +20,7 @@ export class MotosAnosPage implements OnInit {
     this.actRoute.params.subscribe(params => {
       this.modelo = params['modelo'];
       this.marca = params['marca'];
-    })
+    });
 
     this.fipeApi.AnosMoto(this.marca, this.modelo).subscribe(data => this.anos = data);
   }

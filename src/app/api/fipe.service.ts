@@ -7,50 +7,47 @@ import { HttpClient } from '@angular/common/http';
 
 export class FipeService {
 
-  base_url = 'https://parallelum.com.br/fipe/api/v1';
+  baseUrl = 'https://parallelum.com.br/fipe/api/v1';
 
   constructor(private http: HttpClient) { }
 
   // CARROS
-  MarcasCarro () {
-    return this.http.get(`${this.base_url}/carros/marcas`);
+  MarcasCarro() {
+    return this.http.get(`${this.baseUrl}/carros/marcas`);
   }
-  ModelosCarro (marca: any) {
-    return this.http.get(`${this.base_url}/carros/marcas/${marca}/modelos`);
+  ModelosCarro(marca: any) {
+    return this.http.get(`${this.baseUrl}/carros/marcas/${marca}/modelos`);
   }
-  AnosCarro (marca: any, modelo: any) {
-    return this.http.get(`${this.base_url}/carros/marcas/${marca}/modelos/${modelo}/anos`);
+  AnosCarro(marca: any, modelo: any) {
+    return this.http.get(`${this.baseUrl}/carros/marcas/${marca}/modelos/${modelo}/anos`);
   }
-  ValorCarro (marca: any, modelo: any, ano: any) {
-    return this.http.get(`${this.base_url}/carros/marcas/${marca}/modelos/${modelo}/anos/${ano}`);
+  ValorCarro(marca: any, modelo: any, ano: any) {
+    return this.http.get(`${this.baseUrl}/carros/marcas/${marca}/modelos/${modelo}/anos/${ano}`);
   }
-
   // MOTOS
-  MarcasMoto () {
-    return this.http.get(`${this.base_url}/motos/marcas`);
+  MarcasMoto() {
+    return this.http.get(`${this.baseUrl}/motos/marcas`);
   }
-  ModelosMoto (marca: any) {
-    return this.http.get(`${this.base_url}/motos/marcas/${marca}/modelos`);
+  ModelosMoto(marca: any) {
+    return this.http.get(`${this.baseUrl}/motos/marcas/${marca}/modelos`);
   }
-  AnosMoto (marca: any, modelo: any) {
-    return this.http.get(`${this.base_url}/motos/marcas/${marca}/modelos/${modelo}/anos`);
+  AnosMoto(marca: any, modelo: any) {
+    return this.http.get(`${this.baseUrl}/motos/marcas/${marca}/modelos/${modelo}/anos`);
   }
-  ValorMoto (marca: any, modelo: any, ano: any) {
-    return this.http.get(`${this.base_url}/motos/marcas/${marca}/modelos/${modelo}/anos/${ano}`);
+  ValorMoto(marca: any, modelo: any, ano: any) {
+    return this.http.get(`${this.baseUrl}/motos/marcas/${marca}/modelos/${modelo}/anos/${ano}`);
   }
- 
   // CAMINHÕES
-  MarcasCaminhoes () {
-    return this.http.get(`${this.base_url}/caminhoes/marcas`);
+  MarcasCaminhoes() {
+    return this.http.get(`${this.baseUrl}/caminhoes/marcas`);
   }
-  ModelosCaminhoes (marca: any) {
-    return this.http.get(`${this.base_url}/caminhoes/marcas/${marca}/modelos`);
+  ModelosCaminhoes(marca: any) {
+    return this.http.get(`${this.baseUrl}/caminhoes/marcas/${marca}/modelos`);
   }
-  AnosCaminhoes (marca: any, modelo: any) {
-    return this.http.get(`${this.base_url}/caminhoes/marcas/${marca}/modelos/${modelo}/anos`);
+  AnosCaminhoes(marca: any, modelo: any) {
+    return this.http.get(`${this.baseUrl}/caminhoes/marcas/${marca}/modelos/${modelo}/anos`);
   }
-  ValorCaminhoes (marca: any, modelo: any, ano: any) {
-    return this.http.get(`${this.base_url}/caminhoes/marcas/${marca}/modelos/${modelo}/anos/${ano}`);
+  ValorCaminhoes(marca: any, modelo: any, ano: any) {
+    return this.http.get(`${this.baseUrl}/caminhoes/marcas/${marca}/modelos/${modelo}/anos/${ano}`);
   }
-
 }

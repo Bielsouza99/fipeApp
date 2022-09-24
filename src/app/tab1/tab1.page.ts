@@ -7,22 +7,21 @@ import { Router } from '@angular/router';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {
+export class Tab1Page implements OnInit {
 
   marcas;
   modelos;
   anos;
-  
+
   constructor(private fipeApi: FipeService, private router: Router) {}
 
   ngOnInit() {
     this.fipeApi.MarcasCarro().subscribe((data) => {
-      //console.log(data);
       this.marcas = data;
     });
   }
 
-  listarModelos (marca) {
+  listarModelos(marca) {
     this.router.navigate(['/carros-modelos/', marca]);
   }
 

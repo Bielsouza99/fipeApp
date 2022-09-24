@@ -7,19 +7,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss']
 })
-export class Tab3Page {
+export class Tab3Page implements OnInit {
 
   marcas;
 
   constructor(private fipeApi: FipeService, private router: Router) {}
 
-  ngOnInit () {
+  ngOnInit() {
     this.fipeApi.MarcasCaminhoes().subscribe((data) => {
       this.marcas = data;
-    })
+    });
   }
 
-  listarModelos (marca) {
+  listarModelos(marca) {
     this.router.navigate(['/caminhao-modelos/', marca]);
   }
 
