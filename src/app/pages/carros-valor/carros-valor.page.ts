@@ -1,3 +1,4 @@
+import { SerpApiService } from './../../api/serpapi.service';
 import { FipeService } from './../../api/fipe.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -12,9 +13,10 @@ export class CarrosValorPage implements OnInit {
   ano;
   marca;
   modelo;
+  imagem;
   valor: any = [];
 
-  constructor(private actRoute: ActivatedRoute, private fipeApi: FipeService) { }
+  constructor(private actRoute: ActivatedRoute, private fipeApi: FipeService, private imageApi: SerpApiService) { }
 
   ngOnInit() {
     this.actRoute.params.subscribe(params => {
@@ -24,6 +26,10 @@ export class CarrosValorPage implements OnInit {
     });
 
     this.fipeApi.ValorCarro(this.marca, this.modelo, this.ano).subscribe(data => this.valor = data);
+  }
+
+  getImage(tipo: any) {
+    
   }
 
 }
