@@ -104,4 +104,10 @@ dist
 .tern-port
 
 # Environments
+<<<<<<< HEAD
 environments/
+=======
+
+environments.prod.ts
+environments.ts
+>>>>>>> 526a1575cecebd17adc1dbb3c55d8d9f610d7572
